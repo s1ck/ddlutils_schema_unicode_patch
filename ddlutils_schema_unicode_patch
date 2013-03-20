@@ -293,5 +293,17 @@ Index: src/main/java/org/apache/ddlutils/platform/JdbcModelReader.java
              query.append(getPlatformInfo().getDelimiterToken());
 Index: src/main/resources/database.xsd
 ===================================================================
-Cannot display: file marked as a binary type.
-svn:mime-type = application/octet-stream
+--- src/main/resources/database.xsd	(revision 1458454)
++++ src/main/resources/database.xsd	(working copy)
+@@ -75,6 +75,11 @@
+       <xsd:enumeration value="TINYINT"/>
+       <xsd:enumeration value="VARBINARY"/>
+       <xsd:enumeration value="VARCHAR"/>
++      
++      <xsd:enumeration value="NCHAR"/>
++      <xsd:enumeration value="NVARCHAR"/>
++      <xsd:enumeration value="LONGNVARCHAR"/>
++      <xsd:enumeration value="NCLOB"/>
+ 
+       <xsd:enumeration value="BOOLEANINT"/>
+       <xsd:enumeration value="BOOLEANCHAR"/>
